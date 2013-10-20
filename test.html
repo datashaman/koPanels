@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/2.3.0/knockout-debug.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.3.5/knockout.mapping.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script src="koPanels.js"></script>
+        <script src="test.js"></script>
+    </head>
+    <body>
+        <div id="panels">
+            <div id="first-panel" style="display: none">
+                <h1>First Panel</h1>
+                <input type="button" value="Next" data-dest="second-panel" />
+            </div>
+
+            <div id="second-panel" style="display: none">
+                <h1>Second Panel</h1>
+                <input type="button" value="Previous" data-dest="first-panel" />
+            </div>
+        </div>
+    </body>
+</html>
