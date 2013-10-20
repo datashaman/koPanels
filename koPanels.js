@@ -28,7 +28,14 @@ $.widget('datashaman.koPanels', {
 
         this.options.observable.extend(extend);
 
-        this.current(this.options.observable());
+        var addressValue = $.address.value();
+        var value = this.options.observable();
+
+        if(addressValue != '/') {
+            this.options.observable(addressValue);
+        } else {
+            $.address.value(value);
+        }
     },
 
     current: function(id) {

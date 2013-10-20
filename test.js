@@ -1,7 +1,7 @@
 jQuery(document).ready(function($)
 {
     var model = {
-        currentPanel: ko.observable()
+        currentPanel: ko.observable('first-panel')
     };
 
     var container = $('#panels').koPanels({
