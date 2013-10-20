@@ -1,7 +1,7 @@
 koPanels
 ========
 
-Knockout-based panels, using an observable as the current page. Uses jQuery UI widgets, and Asual Address plugin.
+Knockout-based panels, using an observable to store the current panel's ID.
 
 Examples speak louder than words. Open test.html in a browser.
 
